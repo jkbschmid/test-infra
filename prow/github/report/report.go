@@ -298,6 +298,8 @@ func createComment(reportTemplate *template.Template, pj prowapi.ProwJob, entrie
 	}
 	lines = append(lines, []string{
 		"",
+		"Note: Rerunning individual tests will not cause images to be rebuilt.",
+		"",
 		"<details>",
 		"",
 		plugins.AboutThisBot,
